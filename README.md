@@ -1,15 +1,15 @@
-# CanaryDrop CLI 🐤🔒
+# CanaryDrop CLI 
 
 A lightweight, professional cybersecurity terminal tool for creating and managing **canary tokens** - tripwires that alert you when attackers access them.
 
-## 🎯 What Are Canary Tokens?
+## What Are Canary Tokens?
 
 Canary tokens are fake digital assets that look valuable but exist solely to alert you when accessed. They're like burglar alarms for your infrastructure - they don't prevent intrusion, but they immediately tell you when someone's snooping around.
 
 **Traditional Security**: Look for known bad things (malware signatures, attack patterns)  
 **Canary Tokens**: Detect unauthorized access to things that should never be touched (high signal, low noise)
 
-## 🚀 Features
+## Features
 
 ### Token Types Supported
 
@@ -90,7 +90,7 @@ python3 canarydrop.py delete <TOKEN_ID>
 python3 canarydrop.py export
 ```
 
-## 🎓 Examples & Use Cases
+## Examples & Use Cases
 
 ### 1. Internal Threat Detection
 
@@ -177,7 +177,7 @@ python3 canarydrop.py create \
 
 **Deploy**: Add this email to customer lists, CRMs, or mailing lists.
 
-## 📊 Monitoring & Alerts
+## Monitoring & Alerts
 
 ### Check for Triggers
 
@@ -230,7 +230,7 @@ Total Access Events: 8
 Most Recent Access: 2024-02-05 14:23:45
 ```
 
-## 🔧 Advanced Usage
+##  Advanced Usage
 
 ### JSON Export for Integration
 
@@ -264,7 +264,7 @@ python3 canarydrop.py create \
   --destination "https://hooks.slack.com/services/YOUR/WEBHOOK"
 ```
 
-## 🎨 Output Examples
+##  Output Examples
 
 ### Creating a Token
 
@@ -296,7 +296,7 @@ Example AWS config:
                          CANARY ACCESS LOGS
 ================================================================================
 
-🚨 ALERT - 2024-02-05 14:23:45
+ ALERT - 2024-02-05 14:23:45
 Token: aws_a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6
 Name: prod-backup-service
 Type: aws-key
@@ -307,7 +307,7 @@ User Agent: aws-cli/2.13.0 Python/3.11.0
 Total: 1 access events
 ```
 
-## 🔐 Security Best Practices
+##  Security Best Practices
 
 ### Deployment Strategy
 
@@ -335,7 +335,7 @@ When a canary is triggered:
 4. **Analyze** - Review other canaries for additional access
 5. **Improve** - Update security based on findings
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 canarydrop-cli/
@@ -346,7 +346,7 @@ canarydrop-cli/
     └── canaries.db       # SQLite database
 ```
 
-## 🛠️ Technical Details
+##  Technical Details
 
 ### Database Schema
 
@@ -377,7 +377,7 @@ Examples:
 - `dns_a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6`
 - `aws_1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v3w4x5y6`
 
-## 🚦 Real-World Deployment Scenarios
+##  Real-World Deployment Scenarios
 
 ### Scenario 1: Ransomware Early Warning
 
@@ -414,7 +414,7 @@ Place in shared drives with restrictive permissions.
 
 **Result**: If your code leaks to unauthorized parties, you'll know immediately.
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Database Locked Error
 
@@ -444,7 +444,7 @@ chmod +x canarydrop.py
 ls -la ~/.canarydrop/
 ```
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 
 Planned features:
 
@@ -459,11 +459,11 @@ Planned features:
 - [ ] Machine learning anomaly detection
 - [ ] Cloud storage integration
 
-## 📝 License
+##  License
 
 MIT License - Free to use and modify for personal and commercial use.
 
-## 🙏 Contributing
+##  Contributing
 
 Contributions welcome! Areas for improvement:
 - Additional token types
@@ -472,11 +472,11 @@ Contributions welcome! Areas for improvement:
 - Test cases
 - Performance optimizations
 
-## ⚠️ Disclaimer
+##  Disclaimer
 
 This tool is for **defensive security purposes only**. Use responsibly and only on systems you own or have permission to monitor. The authors are not responsible for misuse.
 
-## 📚 Additional Resources
+##  Additional Resources
 
 - [Canary Tokens Concept](https://canarytokens.org/)
 - [MITRE ATT&CK - Deception](https://attack.mitre.org/techniques/T1562/001/)
